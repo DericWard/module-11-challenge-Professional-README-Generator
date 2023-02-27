@@ -1,76 +1,57 @@
 //
-function createbadge(license) {
+function createBadge(license) {
   if(license === "MIT") {
-    return "";
-  }
+    return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+  };
   if(license === "Apache") {
-  
     return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
-  }
+  };
   if(license === "GNU") {
-    return "";
-  }
-  if(license === "No license") {
-    return "";
-  }  
+    return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
+  };
 };
 
-function createSection(license) {
-  if(license === "Apache") {
-    
-    return `## license
-insert license info text here `;
-  }
-  if(license === "MIT") {
-    return `## license
-    insert license info text here `;
-  }
-  if(license === "GNU") {
-    return `## license
-    insert license info text here `;
-  }
-  if(license === "No license") {
-    return "";
-  }  
-}
-
-function createLink() {
-  if (license !== "no license") {
-    return `## license`
-  }
-}
-
-
 // function to generate markdown for README
+
 function generateMarkdown(data) {
   return `# ${data.title}
 
-${createbadge(data.license)}
-https://github.com/${data.Username}/${data.title}
+${createBadge(data.license)}
+
+***
 ## Description
 ${data.description}
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-${createSection}
-- [Contributing](#contributors)
+- [License](#license)
+- [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
-
 ## Installation
-Install the following dependcies before trying to run this app
+Install the following dependencies before trying to run this app:<br>  
+~~~
 ${data.installation}
+~~~
 ## Usage
-To use this app ${data.usage}
-${createSection(data.license)}
-## Contributors: ${data.contributors}
+To use this app: 
+~~~ 
+${data.usage}
+~~~
+## License
+This application is covered under the following license:<br>  
+${createBadge(data.license)} <br>  
+Click the license button for further information on this license type.
+## Contributing
+${data.contributing}
 ## Tests
-Perform the following to test the app: ${data.tests}
+Perform the following to test the app:
+${data.tests}
 ## Questions
-~~~
-Please contact ${data.user} with any questions
-~~~
-
+Visit my GitHub page https://github.com/${data.username}/${data.title} <br>
+If you have further questions please contact 
+${data.firstname} at 
+${data.email}
 `;
 }
 

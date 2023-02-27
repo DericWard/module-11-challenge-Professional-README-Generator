@@ -1,5 +1,4 @@
 //packages, libraries and files to include or use
-// import inquirer from 'inquirer';
 const inquirer = require('inquirer');
 const fs = require('fs');
 const path = require('path');
@@ -8,6 +7,16 @@ const generateMarkdown = require("./assets/js/generateMarkdown");
 
 // array of questions for user
 const questions = [
+    {
+        name: 'firstname',
+        message: 'Enter your first name:',
+        type: 'input'
+    },
+    {
+        name: 'username',
+        message: 'Enter your GitHub username:',
+        type: 'input'
+    },
     {
         name: 'title',
         message: 'What is the title of this project?',
@@ -20,7 +29,7 @@ const questions = [
     },
     {
         name: 'installation',
-        message: 'Explain how to install the app:',
+        message: 'Install the following dependencies before trying to run this app:',
         type: 'input'
     },
     {
@@ -32,11 +41,11 @@ const questions = [
         name: 'license',
         message: 'Select the project license type:',
         type: 'list',
-        choices: ["MIT", "Apache", "GNU", "No license"],
+        choices: ["MIT", "Apache", "GNU"],
     },
     {
         name: 'contributing',
-        message: 'To contribute to this project please clone the repo and contact me with regarding any updates or improvements you have created:',
+        message: 'To contribute to this project please clone the repo and contact me regarding any updates or improvements you have created:',
         type: 'input'
     },
     {
@@ -48,6 +57,11 @@ const questions = [
         name: 'questions',
         message: 'Enter any questions',
         type: 'input',
+    },
+    {
+        name: 'email',
+        message: 'Enter your email address',
+        type: 'email'
     }
 ];
 
@@ -62,7 +76,6 @@ function init() {
     });
 };
 
-// function call to initialize program
 init();
 
 
