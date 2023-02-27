@@ -1,13 +1,22 @@
 {
-  "name": "static-site",
+  "name": "module-11-challenge-professional-readme-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Your Task",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DericWard/module-11-challenge-Professional-README-Generator.git"
+  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DericWard/module-11-challenge-Professional-README-Generator/issues"
+  },
+  "homepage": "https://github.com/DericWard/module-11-challenge-Professional-README-Generator#readme",
   "dependencies": {
     "inquirer": "^6.3.1"
   }
