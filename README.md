@@ -14,5 +14,7 @@
 ### NOTE: You must have both node and inquirer 6.3.1 installed to run this app.
 #### Install node: https://nodejs.org/en/download/
 #### Install inquirer: npm install --save inquirer@^6.3.1
+### Demonstration Video:
+#### https://www.loom.com/share/f0e6b6366d6949f99392b6ce1198d371
 ### App Screenshot:
 ![image](https://user-images.githubusercontent.com/50495939/221959815-c7f383b8-44d3-4f5f-b4bb-912b7e6eb9f1.png)
