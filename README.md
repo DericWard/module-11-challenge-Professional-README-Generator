@@ -2,7 +2,7 @@
 ### Description:
 #### A Command Line (CLI) tool that generates a README.md with contents updated by the user from CLI prompts that have been generated with inquirer.
 ### Motivation:
-#### To satisfy assignment 11 of edX's Front End Web Development bootcamp course to gain further practical experience of Node, importing Node packages, the CLI, and installing and using inquirer.
+#### To satisfy assignment 11 of edX's Front End Web Development bootcamp course to gain further practical experience of using Node, importing Node packages, the CLI, and installing and using inquirer.
 ### Installation:
 #### Please clone the following repo: 
 #### https://github.com/DericWard/module-11-challenge-Professional-README-Generator
