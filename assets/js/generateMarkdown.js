@@ -50,7 +50,8 @@ ${data.tests}
 ## Questions
 Visit this application's GitHub page:<br>
 https://github.com/${data.username}/${data.title}<br>
-If you have further questions please contact 
+If you have any questions 
+${data.questions} : 
 ${data.firstname} at 
 ${data.email}
 `;

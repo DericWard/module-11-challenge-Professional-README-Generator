@@ -3,38 +3,39 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const path = require('path');
 
+// declaration and path to the generateMarkdown script 
 const generateMarkdown = require("./assets/js/generateMarkdown");
 
 // array of questions for user
 const questions = [
     {
         name: 'firstname',
-        message: 'Enter your first name:',
+        message: 'Your first name:',
         type: 'input'
     },
     {
         name: 'username',
-        message: 'Enter your GitHub username:',
+        message: 'Your GitHub username:',
         type: 'input'
     },
     {
         name: 'title',
-        message: 'What is the title of this project?',
+        message: 'Title of this project:',
         type: 'Input'
     },
     {
         name: 'description',
-        message: 'Enter the project description:',
+        message: 'Project description:',
         type: 'input'
     },
     {
         name: 'installation',
-        message: 'Install the following dependencies before trying to run this app:',
+        message: 'List this apps dependencies:',
         type: 'input'
     },
     {
         name: 'usage',
-        message: 'Describe how to use the app',
+        message: 'How to run this app',
         type: 'input'
     },
     {
@@ -45,17 +46,17 @@ const questions = [
     },
     {
         name: 'contributing',
-        message: 'To contribute to this project please clone the repo and contact me regarding any updates or improvements you have created:',
+        message: 'Where to go with contributions:',
         type: 'input'
     },
     {
         name: 'tests',
-        message: 'List any tests for this app',
+        message: 'Testing this app:',
         type: 'input'
     },
     {
         name: 'questions',
-        message: 'Enter any questions',
+        message: 'Where to go with questions:',
         type: 'input',
     },
     {
@@ -65,7 +66,7 @@ const questions = [
     }
 ];
 
-function init() {
+function init() {   // prompt the user with questions, call the generateMarkdown script and store the final results in README.md in the path given below, or error.
     inquirer.prompt(questions).then(function(responses) {
         console.log(responses);
         fs.writeFile('./assets/generated-files/README.md', generateMarkdown(responses), (error) => {

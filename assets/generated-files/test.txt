@@ -1,1 +1,0 @@
-{"title":"my great project!","description":"It's a great project!","contents":"tests, stuff, more contents stuff","installation":"clone the repo","usage":"node index.js","license":[],"contributors":"none","tests":"none","questions":"none"}
