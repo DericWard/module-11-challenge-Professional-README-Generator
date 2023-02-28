@@ -48,7 +48,8 @@ ${data.contributing}
 Perform the following to test the app:
 ${data.tests}
 ## Questions
-Visit my GitHub page https://github.com/${data.username}/${data.title} <br>
+Visit this application's GitHub page:<br>
+https://github.com/${data.username}/${data.title}<br>
 If you have further questions please contact 
 ${data.firstname} at 
 ${data.email}
