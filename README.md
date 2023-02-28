@@ -7,7 +7,7 @@
 #### Please clone the following repo: 
 #### https://github.com/DericWard/module-11-challenge-Professional-README-Generator
 ### Tests:
-#### 1. In the directory you cloned this app's repo into access the CLI via a terminal app.
+#### 1. In the directory you cloned this app's repo into, access the CLI via a terminal app.
 #### 2. Type: node index.js
 #### 3. Follow the on-screen prompts and submit your responses.
 #### 4. Navigate to ./assets/generated-files from this app's main directory.
