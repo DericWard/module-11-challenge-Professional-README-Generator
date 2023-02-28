@@ -4,7 +4,8 @@
 ### Motivation:
 #### To satisfy assignment 11 of edX's Front End Web Development bootcamp course to gain further practical experience node, the CLI, and inquirer.
 ### Installation:
-#### Please clone the following repo: https://github.com/DericWard/module-11-challenge-Professional-README-Generator
+#### Please clone the following repo: 
+#### https://github.com/DericWard/module-11-challenge-Professional-README-Generator
 ### Tests:
 #### 1. In the directory you cloned this app's repo into access the CLI via a terminal app.
 #### 2. Type: node index.js
