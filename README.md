@@ -1,4 +1,4 @@
-# Module 12 Challenge: 
+# module-11-challenge-Professional-README-Generator 
 ### Description:
 #### A Command Line (CLI) tool that generates an HTML file displaying the employees the user has input. The user inputs to the CLI using prompts that have been generated with inquirer.
 ### Motivation:
